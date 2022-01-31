@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans Pro', sans-serif;
+    padding: 0;
+   
+}
+h1 {
+    text-align: center;
+    background-color: rgb(129, 155, 182);
+    margin: 0;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 20%);
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+#board * {
+    border: 0.1rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.categories-clue > input {
+ width: 70%;    
+}
+
+.categories {
+    border: 0.1rem solid green;
+    font-size: 1.3rem;
+    grid-row-start: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.categories-clue {
+    overflow: auto;
+}
+
+.categories-clue:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  color: white;
+}
+
+#board > .question {
+    font-size: 1rem;
+    color: rgb(151, 26, 26);
+}
+
+#board >.right-answer {
+    font-size: 1.5rem;
+    color: blue;
+}
