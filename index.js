@@ -23,6 +23,7 @@ getJeo(5, 20).then((data) => {
   board.innerHTML = data.map(getCategories).join("");
   let allCat = Array.from(document.getElementsByClassName("categories-clue"));
   allCat.forEach((element) => {
+    //console.log(element.textContent.slice(2));
     let renderClue = () => {
       getClues(
         parseInt(element.id),
